@@ -319,3 +319,21 @@ a:hover {
         grid-template-columns: 1fr;
     }
 }
+
+@media (hover: hover) and (pointer: fine) {
+    .logo:hover,
+    .titelbild:hover,
+    .sektionbild:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+    }
+}
+
+@media (max-width: 768px) {
+    .logo:hover,
+    .titelbild:hover,
+    .sektionbild:hover {
+        transform: none;
+        box-shadow: none;
+    }
+}
