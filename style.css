@@ -240,3 +240,82 @@ a:hover {
     transform: scale(1.5);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
 }
+
+@media (max-width: 768px) {
+    body {
+        margin: 8px;
+    }
+
+    header,
+    section,
+    footer {
+        padding: 16px;
+        border-radius: 14px;
+    }
+
+    .logo {
+        width: 120px;
+        height: auto;
+    }
+
+    .titelbild,
+    .sektionbild,
+    .contact-logo {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .navigation {
+        position: static;
+        width: auto;
+        margin: 12px 0;
+        padding: 10px 8px;
+    }
+
+    .navigation a {
+        display: inline-block;
+        margin: 4px 6px;
+        font-size: 0.95rem;
+    }
+
+    main {
+        padding: 0;
+    }
+
+    table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    th,
+    td {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+
+    th:nth-child(3),
+    td:nth-child(3) {
+        min-width: 220px;
+        white-space: normal;
+    }
+
+    th:nth-child(4),
+    td:nth-child(4) {
+        min-width: 90px;
+        white-space: nowrap;
+    }
+
+    .button,
+    .kontakt-button,
+    button {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .bild-grid {
+        grid-template-columns: 1fr;
+    }
+}
