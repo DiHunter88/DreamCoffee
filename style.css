@@ -231,14 +231,18 @@ a:hover {
 }
 
 .logo,
-.sektionbild {
+.sektionbild,
+.contact-logo {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.logo:hover,
-.sektionbild:hover {
-    transform: scale(1.5);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+@media (hover: hover) and (pointer: fine) {
+    .logo:hover,
+    .sektionbild:hover,
+    .contact-logo:hover {
+        transform: scale(1.5);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+    }
 }
 
 @media (max-width: 768px) {
@@ -318,21 +322,11 @@ a:hover {
     .bild-grid {
         grid-template-columns: 1fr;
     }
-}
 
-@media (hover: hover) and (pointer: fine) {
     .logo:hover,
     .titelbild:hover,
-    .sektionbild:hover {
-        transform: scale(1.2);
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
-    }
-}
-
-@media (max-width: 768px) {
-    .logo:hover,
-    .titelbild:hover,
-    .sektionbild:hover {
+    .sektionbild:hover,
+    .contact-logo:hover {
         transform: none;
         box-shadow: none;
     }
