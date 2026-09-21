@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontaktformular</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="top">
+        <img src="images/logo.png" alt="Dream Coffee Logo" class="contact-logo">
+        <h1>Kontaktformular</h1>
+        <p>Schreiben Sie uns eine Nachricht oder einen Wunsch.</p>
+    </header>
+
+    <main>
+        <section class="kontakt-formular">
+            <p>
+                Sie können uns jederzeit eine Nachricht senden. Bitte tragen Sie
+                Ihren Namen, Ihre E-Mail-Adresse und Ihr Anliegen ein.
+            </p>
+
+            <form action="#" method="post">
+                <p>
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" placeholder="Ihr Name">
+                </p>
+
+                <p>
+                    <label for="email">E-Mail:</label><br>
+                    <input type="email" id="email" name="email" placeholder="Ihre E-Mail-Adresse">
+                </p>
+
+                <p>
+                    <label for="anliegen">Nachricht:</label><br>
+                    <textarea id="anliegen" name="anliegen" rows="8" cols="40" maxlength="700" placeholder="Schreiben Sie hier Ihre Nachricht"></textarea>
+                </p>
+
+                <p>
+                    <button type="submit">Senden</button>
+                </p>
+            </form>
+
+            <p>
+                <a href="index.html">&larr; Zurück zur Startseite</a>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Dream Coffee</p>
+    </footer>
+
+</body>
+</html>
